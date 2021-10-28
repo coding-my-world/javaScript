@@ -1,0 +1,83 @@
+.user-text{
+    width: 800px;
+   font-size: 20px;
+   color: deepskyblue;
+   margin: auto;
+  
+   
+}
+
+.left{
+    float:left ;
+    width:300px;
+    height: 500px;
+    color: palevioletred;
+    
+   
+}
+.right{
+    float: right;
+    width:700px;
+    height: 500px;
+ 
+}
+.right table{
+    width: 700px;
+}
+.other{
+    width: 1000px;
+    margin: auto;
+    color: olive;
+}
+.main{
+    width: 700px;
+    margin: auto;
+}
+.waimai{
+    float: left;
+    width: 300px;
+    height: 200px;
+   
+}
+.peizi{
+    float: right;
+    margin-left: 5px;
+    width: 350px;
+    height: 200px;
+   
+   
+}
+.clear-float{
+    clear: both;
+}
+.text-pice{
+    text-decoration: line-through;
+}
+.shopping{
+    width: 900px;
+    margin: auto;
+   
+   
+}
+.text-wenzi{
+    color: royalblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+.liulan{
+    margin: auto;
+    width: 900px;
+    color: tomato;
+}
+.order{
+    margin: auto;
+    width: 900px;
+}
+.waimaidingdan{
+    color: yellowgreen;
+}
+/*.user-left img{
+    
+    width: 150px;
+  /*  margin: 20px 10px 0px 280px;
+    
+}*/

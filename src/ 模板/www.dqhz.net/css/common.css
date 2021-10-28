@@ -1,0 +1,689 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-font-smoothing: antialiased;
+    outline: 0;
+    transition:all 0.3s ease;
+}
+
+body, button, input, select, textarea {
+    font: 14px/1.5 Microsoft YaHei, SimSun, Arial, Verdana;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%
+}
+
+address, cite, dfn, em, var {
+    font-style: normal
+}
+
+code, kbd, pre, samp {
+    font-family: courier new, courier, monospace
+}
+
+small {
+    font-size: 12px
+}
+
+ol, ul {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+    font: 14px Microsoft YaHei, SimSun, Arial, Verdana;
+    transition:all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+    transition:all 0.3s ease;
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+fieldset, img {
+    border: 0
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+select {
+    white-space: nowrap
+}
+
+body {
+    background: #fff;
+}
+
+/*body,html{ min-height: 100%;}*/
+
+/*常用样式*/
+.ri {
+    float: right;
+    display: inline;
+}
+
+.fl {
+    float: left;
+    display: inline;
+}
+
+.clear {
+    clear: both;
+}
+
+/*清除浮动*/
+.vhide {
+    visibility: hidden
+}
+
+/*使元素隐藏但保存占位*/
+.t5 {
+    margin-top: 5px;
+}
+
+.t10 {
+    margin-top: 10px;
+}
+
+.t15 {
+    margin-top: 15px;
+}
+
+.t20 {
+    margin-top: 20px;
+}
+
+.t25 {
+    margin-top: 25px;
+}
+
+.l5 {
+    margin-left: 5px;
+}
+
+.l10 {
+    margin-left: 10px;
+}
+
+.l15 {
+    margin-left: 15px;
+}
+
+.l20 {
+    margin-left: 20px;
+}
+
+.l25 {
+    margin-left: 25px;
+}
+
+.r5 {
+    margin-right: 5px;
+}
+
+.r10 {
+    margin-right: 10px;
+}
+
+.r15 {
+    margin-right: 15px;
+}
+
+.r20 {
+    margin-right: 20px;
+}
+
+.r25 {
+    margin-right: 25px;
+}
+
+.b5 {
+    margin-bottom: 5px;
+}
+
+.b10 {
+    margin-bottom: 10px;
+}
+
+.b15 {
+    margin-bottom: 15px;
+}
+
+.b20 {
+    margin-bottom: 20px;
+}
+
+.b25 {
+    margin-bottom: 25px;
+}
+
+.lr5 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tm {
+    filter: ~ "alpha(opacity = 0)";
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+
+/*透明*/
+.red {
+    color: red;
+}
+
+/*超出省略号*/
+.shengl {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.ovf {
+    overflow: hidden
+}
+
+.yahei {
+    font-family: "Microsoft YaHei"
+}
+
+/*微软雅黑*/
+.songti {
+    font-family: "SimSun"
+}
+
+/*宋体*/
+.heiti {
+    font-family: "SimHei"
+}
+
+/*黑体*/
+.shuzi {
+    font-family: "verdana";
+}
+
+/*数字字体*/
+.bnone {
+    border: 0 none;
+}
+
+/*边框0*/
+.dian {
+    display: block;
+    width: 2px;
+    height: 2px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: #000;
+}
+
+/*黑色小圆点*/
+.cuti {
+    font-weight: bold;
+}
+
+/*粗体*/
+.mauto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*左右居中*/
+.show {
+    display: block;
+}
+
+/*使元素块级化或显示元素*/
+.none {
+    display: none
+}
+
+/*隐藏元素*/
+.showBlock {
+    display: inline-block;
+    _zoom: 1;
+}
+
+/*设容器为内联块*/
+.fsize12 {
+    font-size: 12px;
+}
+
+.fsize14 {
+    font-size: 14px;
+}
+
+.fsize16 {
+    font-size: 16px;
+}
+
+.fsize18 {
+    font-size: 18px;
+}
+
+.fsize20 {
+    font-size: 20px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+/*斜体*/
+.em {
+    font-family: Constantia, Georgia;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/*斜体英文字体*/
+.amp {
+    font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/*默认的输入框样式*/
+.text {
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    text-indent: 5px;
+    border-radius: 6px;
+    border: 1px #D2D2D2 solid;
+}
+
+/*默认文本域样式*/
+.textarea {
+    width: 100px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px #D2D2D2 solid;
+}
+
+/*主站内容区宽度*/
+.w1005 {
+    width: 1005px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*loading*/
+.loading {
+    background: url(../images/loading.gif) center center no-repeat;
+    width: 100%;
+    min-height: 50px;
+    background-size: 30px 30px;
+    display: none;
+}
+
+.mainWidth {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*顶部导航栏*/
+.headerNva {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.headerLogin {
+    width: 100%;
+    min-width: 1200px;
+    height: 40px;
+    position: relative;
+    margin: auto;
+}
+
+.headerLogin ul {
+    float: right;
+    margin: 10px 20px;
+}
+
+.headerLogin ul li {
+    float: left;
+    margin: 0 10px;
+}
+
+.headerLogin ul li a {
+    font-size: 12px;
+    color: #666666;
+    letter-spacing: 0;
+    line-height: 19px;
+
+}
+
+.headerLogin ul li a:hover {
+    text-decoration: none;
+    color: #DE3545;
+}
+
+.headerLogin ul .vertiaclLine {
+    height: 10px;
+    background-color: #DFDFDF;
+    width: 1px;
+    margin: 5px 0;
+}
+
+.headerLogin ul .login a {
+    color: #DE3545;
+}
+
+.headerLogin .hotline {
+    float: right;
+    margin: 10px 0px 10px 20px;
+
+}
+
+.headerLogin .hotline a {
+    font-size: 12px;
+}
+
+.headerMenu {
+    width: 100%;
+    min-width: 1200px;
+    height: 80px;
+    background: #fff;
+    position: relative;
+    margin: auto;
+    z-index: 1000;
+}
+
+.headerMenu .navIcon {
+    float: left;
+    width: 322px;
+    margin-top: 20px;
+}
+
+.headerMenu ul {
+    float: right;
+    height: 80px;
+    margin: auto 0;
+}
+
+.headerMenu ul li {
+    float: left;
+    margin-left: 50px;
+}
+
+.headerMenu ul li a {
+    float: left;
+    font-size: 16px;
+    color: #151515;
+    letter-spacing: 0;
+    line-height: 80px;
+    text-align: center;
+    display: block;
+    height: 80px;
+    position: relative;
+}
+
+.headerMenu .on {
+    color: #DE3545;
+}
+
+.headerMenu .on span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #DE3545;
+    display: block;
+    bottom: 0;
+}
+
+.headerMenu ul li a:hover {
+    text-decoration: none;
+    color: #DE3545;
+}
+
+.headerMenu ul li a:hover span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #DE3545;
+    display: block;
+    bottom: 0;
+}
+
+/*底部信息栏*/
+.footer {
+    width: 100%;
+    height: 369px;
+    background: #474747;
+}
+
+.footer .info {
+    width: 1200px;
+    height: 329px;
+    background: #474747;
+    position: relative;
+    margin: auto;
+}
+
+.footer .info .icon {
+    padding-top: 50px;
+    padding-bottom: 45px;
+}
+
+.footer .info .left {
+    float: left;
+    padding-right: 60px;
+    padding-bottom: 25px;
+    border-right: 1px solid rgba(151, 151, 151, 0.39);
+}
+
+.footer .info .left .aboutus {
+    font-size: 18px;
+    color: #E5E5E5;
+    letter-spacing: 0;
+    line-height: 22px;
+    padding-bottom: 30px;
+}
+
+.footer .info .left .about {
+    font-size: 14px;
+    color: #AAAAAA;
+    letter-spacing: 0;
+    line-height: 22px;
+    width: 363px;
+}
+
+.footer .info .center {
+    float: left;
+    margin-left: 60px;
+}
+
+.footer .info .center .address {
+    margin-bottom: 25px;
+}
+
+.footer .info .center ul li {
+    font-size: 14px;
+    color: #AAAAAA;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: auto;
+}
+
+.footer .info .center ul a {
+    color: #AAAAAA;
+}
+
+.footer .info .center ul a:hover {
+    color: #cd3545;
+}
+
+.footer .info .right {
+    float: right;
+}
+
+.footer .info .right .wxgzh {
+    opacity: 0.6;
+    font-size: 14px;
+    color: #F3F3F3;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: center;
+    padding-bottom: 11px;
+}
+
+.footer .bottom {
+    width: 100%;
+    background-color: #333333;
+    height: 40px;
+}
+
+.footer .bottom .copyright {
+    margin: auto;
+    width: 1200px;
+    background-color: #333333;
+}
+
+.footer .bottom .copyright .copyrightTxt {
+    font-size: 14px;
+    color: #AAAAAA;
+    letter-spacing: 0;
+    line-height: 40px;
+}
+
+.contactInfo {
+    position: fixed;
+    top: 30%;
+    right: 10px;
+    z-index: 10000;
+    width: 40px;
+    height: 150px;
+}
+
+.contactInfo a {
+    cursor: pointer;
+}
+
+.contactInfo a .infoPhone {
+    background: url("../images/icon/dh2.png");
+    width: 38px;
+    height: 38px;
+    position: absolute;
+
+}
+
+.contactInfo a:hover .infoPhone {
+    background: url("../images/icon/dh1.png");
+}
+
+.contactInfo a .infoPhone1 {
+    width: 140px;
+    height: 37px;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 38px;
+    background-image: linear-gradient(-90deg, #DE5C35 0%, #DE3545 100%);
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    display: none;
+}
+
+.contactInfo a:hover .infoPhone1 {
+    display: block;
+}
+
+.contactInfo a .infoQQ {
+    background: url("../images/icon/qq2.png");
+    width: 38px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    top: 37px;
+}
+
+.contactInfo a:hover .infoQQ {
+    background: url("../images/icon/qq1.png");
+}
+
+.contactInfo a .infoQQ1 {
+    width: 140px;
+    height: 37px;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    top: 37px;
+    right: 38px;
+    background-image: linear-gradient(-90deg, #DE5C35 0%, #DE3545 100%);
+    color: #fff;
+    text-align: center;
+    line-height: 38px;
+    display: none;
+}
+
+.contactInfo a:hover .infoQQ1 {
+    display: block;
+}
+
+.contactInfo a .infoWX {
+    background: url("../images/icon/wx2.png");
+    width: 38px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    top: 74px;
+}
+
+.contactInfo a:hover .infoWX {
+    background: url("../images/icon/wx1.png");
+}
+
+.contactInfo a .infoWX1 {
+    position: absolute;
+    right: 47px;
+    display: none;
+}
+
+.contactInfo a:hover .infoWX1 {
+    display: block;
+}
+
+.contactInfo .backTop {
+    background: url("../images/gotop.png");
+    width: 38px;
+    height: 38px;
+    display: block;
+    position: absolute;
+    top: 112px;
+}
+
+

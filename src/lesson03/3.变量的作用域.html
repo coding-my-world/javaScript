@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // function qj(){
+        //     var x = 1;
+        //     x=x+1;
+        // }
+        // x=x+2;      //Uncaught ReferenceError:x is not defined
+        //
+        // 'use strict'
+        // function qj(){
+        //     var x = 1;
+        //     function qj2(){
+        //         var y = x + 1;
+        //     }
+        //     var z = y + 1; // Uncaught ReferenceError: y is not defined
+        //
+        // }
+        //假设在javaScript中函数查找从自身函数开始，由内向外查找，假设外部存在这个同名的
+        //函数变量，则内部函数会屏蔽外部函数的变量。
+        // function qj(){
+        //     var x=1;
+        //     function qj2(){
+        //         var x="A";
+        //         console.log('inner'+x);
+        //     }
+        //     qj2()
+        //     console.log("outer"+x);
+        // }
+        // function qj(){
+        //     var x,y,z;
+        //     x="x"+y;
+        //     console.log(x)      //xundefined因为y没有值，所以x变量没有定义成功
+        //     y="y";
+        // }
+        var x='xxx';
+        alert(x);
+        // alert(window.x); //默认所以的全局变量，都会自动绑定在window对象下
+        // window.alert(window.x);
+        window.alert(x)
+        var old_alert = window.alert;
+        old_alert(x);
+
+        //JavaScript实际上只有一个全局作用域，任何变量（函数也可以视为变量），假设没有在函数作用范围
+        //内找到，就会向外查找，如果在全局作用域都没有找到，报错ReferenceError
+        //唯一全局变量
+        var KuangApp ={};
+
+        //定义全局变量
+        KuangApp.name='kuangshen';
+        KuangApp.add = function (a,b){
+            return a+b;
+        }
+        //把自己的代码全部放入自己定义的唯一空间名字中，降低全局命名冲突的问题
+    </script>
+</head>
+<body>
+
+</body>
+</html>

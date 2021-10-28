@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    'use strict';
+    function abs(x){
+      if(x>=0){
+        return x;
+      }
+      else return -x;
+    }
+    var abs2 = function (x){
+        //手动抛出异常来判断
+        if(typeof x!=='number'){
+            throw "not a number"
+        }
+        if(x>=0){
+            return x;
+        }else{
+            return -x;
+        }
+    }
+    //arguments是一个免费赠送的关键字；，代表进来的所有的参数，是一个数组！
+  </script>
+</head>
+<body>
+</body>
+</html>

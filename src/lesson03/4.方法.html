@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>方法</title>
+  <script>
+    // var kuangshen={
+    //   name:'崔浩然',
+    //   //属性
+    //   birth:2020,
+    //   //方法
+    //   age:function (){
+    //     var now = new Date().getFullYear();
+    //     return now-this.birth;
+    //   }
+    // }
+    function getAge(){
+      var now=new Date().getFullYear();
+      return now-this.birth;
+    }
+    var kuangshen={
+      name:'cuihaoran',
+      birth:2001,
+      age:getAge
+    }
+    //kuangshen.age() --> 20
+    // getAge.apply(kuangshen,[]) //this指向了kuangshen，参数为空
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>

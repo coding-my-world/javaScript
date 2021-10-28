@@ -1,0 +1,417 @@
+body {
+    background: url(../images/bg1.png);
+}
+.zqh_footer_school {
+    font-family: '华文行楷' !important;
+    color: #c7c6c6 !important;
+    font-size: 30px !important;
+}
+.footer2{
+    width: 250px;
+    height: 310px;
+    margin: auto;
+}
+.foot_line2{
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    padding-top: 40px;
+}
+.footer_text{
+    font-size: 15px;
+}
+/* 排行榜 */
+.top_left{
+    width: 33%;
+    height: 200px;
+    float: left;
+}
+.top_right{
+    width: 33%;
+    height: 200px;
+    float: left;
+}
+.top_center{
+    width: 33%;
+    height: 200px;
+    margin-left: 4px;
+    margin-right: 4px;
+    float: left;
+}
+
+
+.aui-bear-right h2{
+    color:#50d17e;
+    font-weight:normal;
+    font-size:1.85rem;
+    text-align:right;
+}
+
+.aui-bear-right p{
+    font-size:0.95rem;
+    text-align:right;
+    color:#999999;
+}
+
+.aui-logo-img span{
+    border-radius:100%;
+    text-align:center;
+    line-height:20px;
+    color:#fff;
+    background:#b2c1d4;
+    font-size:0.8rem;
+}
+.aui-logo-img span img{
+    border:none;
+    width:30px;
+    height:30px;
+}
+.aui-logo-img{
+    width:105px;
+    height:155px;
+    float: left;
+}
+
+.aui-logo-img img{
+    width:105px;
+    height:105px;
+    border:1px solid hsl(0, 88%, 66%);
+    border-radius:8px;
+}
+.aui-flex-box{
+    width: 65%;
+    float: right;
+}
+.aui-flex-box h2{
+    color:#333333;
+    font-family: '楷体';
+}
+.aui-flex-box p{
+    color:#666666;
+    margin-top:0.2rem;
+}
+
+/* 电子菜单 */
+.center {
+    width: 960px;
+    margin: auto;
+    /* border: solid 1px; */
+    position:relative;
+    }
+    .topLeft {
+    margin-left: 40px;
+    
+    }
+    
+    #categoryList {
+    height: 28px;
+    overflow: hidden;
+    width: 28px;
+    position:absolute;
+    top: 13px;
+    left: -20px;
+    text-align: left;
+    z-index: 10000;
+    }
+    #categoryList .buttonList {
+    background-position:-575px -175px;
+    cursor: pointer;
+    height: 23px;
+    text-align: center;
+    border-radius: 4px;
+    width: 23px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    display:block;
+    margin-bottom: 6px;
+    }
+    #categoryList:hover .buttonList {
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: black;
+    }
+    #categoryList:hover {
+    height:600px;
+    width:360px;
+    }
+    ul {
+    list-style: none;
+    }
+    #categoryList ul {
+    
+    width: 160px;
+    border-radius: 4px;
+    opacity: 0;
+    box-shadow: 0 0 1px rgba(0, 0,0, 0.8), 0 10px 25px rgba(0, 0,0, 0.4);
+    }
+    #categoryList:hover ul {
+    opacity: 1;
+    }
+    #categoryList li {
+    width: 140px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px;
+    display: block;
+    position: relative;
+    font-size: 12px;
+    border-bottom: 1px solid rgba(0, 0,0, 0.2);
+    }
+    #categoryList li a {
+    display: block;
+    color: #CCCCCC;
+    }
+    #categoryList li ul {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width:0;
+    opacity:0!important;
+    border-radius: 0 4px 4px 0;
+    left:160px;
+    overflow: hidden;
+    }
+    #categoryList li:hover {
+    background:#000000;
+    }
+    #categoryList li:hover ul {
+    display:block;
+    opacity:1!important;
+    width:160px;
+    }
+    #categoryList li:first-child {
+    border-radius: 4px 4px 0 0;
+    padding-top: 4px;
+    }
+    #categoryList li:last-child {
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 4px;
+    }
+    #categoryList li ul li:first-child {
+    border-radius: 0 4px 0 0;
+    padding-top: 4px;
+    }
+    #categoryList li ul li:last-child {
+    border-radius: 0 0 4px 0;
+    padding-bottom: 4px;
+    }
+    #categoryList li ul li:first-child a {
+    color: red;
+    }
+    #categoryList li ul li:last-child a {
+    color: blue;
+    }
+    #categoryList .count {
+    background:rgba(255, 255, 255, 0.2);
+    color:black;
+    font-size:9px;
+    border-radius:10px;
+    display: inline-block;
+    margin-left: 4px;
+    line-height: 0px;
+    padding: 7px 5px 6px;
+    /* float:right; */
+    margin-top: 9px;
+    }
+    #categoryList a:hover {
+    color:#FFFFFF;
+    text-decoration:none!important;
+    }
+    #categoryList a:hover .count {
+    background:rgba(255, 255, 255, 0.7)
+    }
+    /*搜索框样式*/
+#header {
+    position: relative;
+    padding: 80px 0 27px 0;
+}
+.int {
+    position: relative;
+	width: 180px;
+	height:80px;
+	margin-top: 10px;
+	text-align:center;
+	float:left;
+}
+#search {
+    width:460px;
+	margin:16px 0 0 0 ;
+    float:right;
+    display: block;
+    position: relative;
+}
+.clear {
+    clear: both;
+}
+.sf_search {
+    /* width: 100%; */
+    border: solid;
+}
+.sf_fangda{
+    float: right;
+    border: solid;
+}
+#homePage.sloggato #search .sf_input {
+    border-radius: 32px;
+    font-size: 20px;
+    padding: 18px 20px 12px 65px;
+    width: 670px;
+    background-position: -740px -125px;
+    
+}
+#homePage.sloggato #search .sf_input:focus {
+    border-radius: 32px;
+    font-size: 20px;
+    padding: 18px 20px 12px 65px;
+    width: 670px;
+    background-position: -740px -125px;
+    background-color: #099;
+}
+.screen-reader-text {
+	display: none;
+}
+/**圆角显示*/
+.sf_input{
+    border-radius: 5px;
+    padding-left: 10px;
+    
+}
+.sf_form{
+    width: 390px;
+    height: 50px;
+    /* border: solid; */
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+/*列表*/
+#container {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 20px;
+    }
+    .album200 {
+    /* height: 265px;
+    width: 200px; */
+    margin: 0 0 35px;
+    /* padding: 0px 20px 0; */
+    color: #FFFFFF;
+    text-align: center;
+    float: left;
+    letter-spacing: -0.2px;
+    position: relative;
+    }
+    .album200 a {
+    /* color:#f33d3d; */
+    color: #FFFFFF;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    }
+    .album200 .cdAlbum {
+    position:absolute;
+    top: 0px;
+    left: 20px;
+    height: 200px;
+    width: 200px;
+    background-position: -200px 0px;
+    }
+    .album200 .coverAlbum {
+    background-color: rgba(245, 243, 243, 0.9);
+    height: 200px;
+    width: 300px;
+    box-shadow: 0 0 8px rgba(0, 0,0, 0.3);
+    border-radius: 2px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin-top: 0px;
+    top: 0px;
+    left: 0;
+    z-index: 300PX;
+    border: solid;
+    }
+    .album200 .patina {
+    height: 200px;
+    width: 200px;
+    display: block;
+    position: absolute;
+    background-position:-450px -225px;
+    top:0px;
+    left:0px;
+    }
+    .nameAlbum, .artistAlbum {
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width:100%;
+    }
+    .nameAlbum {
+    font-size:12px;
+    font-weight:bold;
+    margin-top:8px;
+    }
+    .artistAlbum {
+    font-size: 11px;
+    margin-top: 6px;
+    display: block;
+    z-index: 200px;
+    }
+    .artistAlbum a, .nameAlbum a{
+        color: crimson;
+    }
+    .album200.animation:hover .cdAlbum {
+    top:-34px;
+    /* -webkit-transform: rotate(-180deg); */
+    }
+    .album200.animation:hover .coverAlbum {
+    margin-top:-34px;
+    }
+    .twitterBird, .buttonList, .facebookInvite, .facebookLogin, .ywp-btn-next, .ywp-btn-prev, .ywp-btn-play, .ywp-btn-pause, .fbButtonO, .twButtonO, .sf_input, #related_posts_thumbnails a:last-child, .diskIcon, .patina, .post-edit-link, .logo, .sf_button, .cdAlbum, .facebookConnect, .socialConnect, .ywp-page-btn-play, .ywp-page-btn-pause, .buttonLover, .buttonLover .wpfp-link, .listLover .count em {
+    background-color: transparent;
+    background-image:url(" ../images/sprite.png")!important;
+    background-repeat: no-repeat;
+    }
+    .menu_list{
+        margin-bottom: 30px;
+    }
+
+    /* 返回顶部 */
+    .back_to_top{
+             width: 40px;
+             height: 40px;
+             position: fixed;
+             bottom: 30px;
+             background-color: rgb(118, 157, 240);
+             border:1px solid rgb(135, 103, 252);
+             border-radius: 50%; 
+             left: 50%;
+             margin-left:500px;
+         
+         }
+         .back_to_top:after{
+             content: "";
+           width:16px;
+           height:16px;
+            border-left:2px solid #333;
+            border-bottom: 2px solid #333;
+            position: absolute;
+             left: 12px;
+             top: 15px;
+             transform :rotate(135deg);
+         
+        }
+      .back_to_top:hover{
+           background-color: #fff;
+        }
+.order_head {
+    width: 200px;
+    height: 55px;
+    font-family: '华文行楷';
+    color: #0b0beb;
+    font-size: 40px;
+    margin: auto;
+}
+
+.top_head {
+    font-family: '华文行楷';
+    color: #f32626;
+    font-size: 40px;
+}

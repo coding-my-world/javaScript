@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+		<title>心怀养老官网</title>
+		<link rel="stylesheet" href="../res/layui/css/layui.css">
+		<link rel="stylesheet" href="../res/static/css/index.css">
+		<link rel="stylesheet" href="../res/static/css/regist.css">
+	</head>
+
+	<body>
+		<!-- nav部分 -->
+		<div class="nav">
+			<div class="nav-logo">
+			<a href="index.html">
+				<img class="logo" src="../res/static/img/logo.png" style="width: 120px" height="80px" alt="养老院logo">
+			</a>
+		</div>
+			<div class="layui-container">
+
+				<div class="nav-list">
+					<button>
+          <span></span><span></span><span></span>
+        </button>
+				<ul class="layui-nav" lay-filter="">
+					<li class="layui-nav-item"><a href="index.html">首页</a></li>
+					<li class="layui-nav-item"><a href="tdjs.html">团队介绍</a></li>
+					<li class="layui-nav-item "><a href="zhyl.html">智慧养老</a></li>
+					<li class="layui-nav-item"><a href="jzts.html">精准推送</a></li>
+					<li class="layui-nav-item layui-this"><a href="ssyly.html">搜索养老院</a></li>
+					<li class="layui-nav-item"><a href="kf.html">客服</a></li>
+		        </ul>
+				</div>
+			</div>
+		</div>
+		<!-- banner部分 -->
+		<div class="banner zygh">
+			<div class="title">
+				<p>搜索养老院</p>
+				<p class="en">Search nursing home</p>
+			</div>
+		</div>
+
+		<!--搜索框-->
+		<div class="superlookup">
+			<input type="text" placeholder="请输入您要查找的养老机构" id="org_name">
+			<input type="button" class="cha" value="查找" onclick="">
+		</div>
+
+
+		<script src="../res/layui/layui.js"></script>
+
+		<script>
+			layui.config({
+				base: '../res/static/js/'
+			}).use('firm');
+		</script>
+	</body>
+
+</html>

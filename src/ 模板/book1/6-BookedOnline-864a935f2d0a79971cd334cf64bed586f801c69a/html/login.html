@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <div style="background-color:white;">
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贝壳点餐登录界面</title>
+   <style>
+    p1 {
+      color:darkgoldenrod;
+      font-size: 20px;
+      font-weight: 700;
+     }
+     #username,#password{
+        width: 240px;
+        height: 32px;
+        border: 1px solid #A6A6A6 ;
+        /*设置边框圆角*/
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+    #checkcode{
+        width: 110px;
+    }
+
+    #img_check{
+        height: 32px;
+        vertical-align: middle;
+    }
+    #btn_sub{
+        width: 100px;
+        height: 40px;
+        background-color: #FFD026;
+        border: 1px solid #FFD026 ;
+        font-weight: 700;
+    }
+    .error{
+        color:red;
+    }
+    #td_sub{
+        padding-left: 150px;
+    }
+    .display-1{
+      margin-top: 250px;
+    }
+    .tabs-wrapper{
+      margin-top: 60px;
+    }
+    .rg_layout{
+      margin-top: 90px;
+    }
+    .content{
+      margin-top: -150px;
+    }
+    
+   </style>
+   <script>
+       window.onload = function(){
+        //1.给表单绑定onsubmit事件
+        document.getElementById("form").onsubmit = function(){
+            //调用用户校验方法   chekUsername();
+            //调用密码校验方法   chekPassword();
+            //return checkUsername() && checkPassword();
+
+            return checkUsername() && checkPassword();
+        }
+
+        //给用户名和密码框分别绑定离焦事件
+        document.getElementById("username").onblur = checkUsername;
+        document.getElementById("password").onblur = checkPassword;
+    }
+
+    //校验用户名
+    function checkUsername(){
+        //1.获取用户名的值
+        var username = document.getElementById("username").value;
+        //2.定义正则表达式
+        var reg_username = /^\w{6,12}$/;
+        //3.判断值是否符合正则的规则
+        var flag = reg_username.test(username);
+        //4.提示信息
+        var s_username = document.getElementById("s_username");
+
+        if(flag){
+            //提示绿色对勾
+            s_username.innerHTML = "<img width='35' height='25' src='../images/gou.png'/>";
+        }else{
+            //提示红色用户名有误
+            s_username.innerHTML = "用户名格式有误";
+        }
+        return flag;
+    }
+
+    //校验密码
+    function checkPassword(){
+        //1.获取用户名的值
+        var password = document.getElementById("password").value;
+        //2.定义正则表达式（数字、26个字母或下划线，6~12）
+        var reg_password = /^\w{6,12}$/;
+        //3.判断值是否符合正则的规则
+        var flag = reg_password.test(password);
+        //4.提示信息
+        var s_password = document.getElementById("s_password");
+
+        if(flag){
+            //提示绿色对勾
+            s_password.innerHTML = "<img width='35' height='25' src='../images/gou.png'/>";
+        }else{
+            //提示红色用户名有误
+            s_password.innerHTML = "密码格式有误";
+        }
+        return flag;
+    }
+
+
+   </script>
+</head>
+<body>
+  <div class="header" >
+    <div class="container">
+      <header class="header">
+        <a class="logo href="/">
+           <img alt="北京科技大学天津学院" class="img-circle" width="80px" height="70px"src="../images/timg.jpg"/>
+        </a>
+        <div class="primary">
+            <ul>
+            <li class="stores">
+              <a id="stores-primary" href="/stores/">门店</a>
+            </li>
+            <li class= "acount">
+              <a class="active" id="acount-primary" href="/acount/">
+              <span class="" data-reactroot=""  >我的账户</span>
+              </a>
+            </li>
+            <li class="menu">
+              <a id="menu-primary" href="/menu/">菜单</a>
+            </li>
+           </ul>
+          </div> 
+     </header>
+    </div>
+  </div>
+  <div class="content">
+    <img src="../images/mm.jpg"align="right" width="1200px" height="500px"  ></img>
+  </div>
+  </div>
+  
+  <div class="display-1">
+    <span>登录或者创建一个新账户</span>
+  </div>
+  <div class="tabs-wrapper">
+    <ul class="subcategories">
+      <li>
+        <a class="active" href="login.html">
+          <span>登录</span>
+        </a>
+      </li>
+      <li>
+        <a class="false" href="register.html">
+         <span>注册</span>
+        </a>
+     </li>
+      <li>
+        <a class="false" href="/acount/starbucks-rewords">
+         <span>关于贝壳订餐</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+        
+      
+  <section class="join-form submit-box">
+ <div class="rg_layout">
+   <div class="rg_left">
+     <p1>用户登录</p1>
+    </div>
+    <form action="../user_fsj/html/user_index.html" id="form" method="get">
+      <table>
+       <tr>
+         <td class="td_left"><label for="username">用户名</label></td>
+          <td class="td_right">
+            <input type="text" name="username" id="username" placeholder="请输入用户名">
+             <span id="s_username" class="error"></span>
+           </td>
+        </tr>
+
+        <tr>
+          <td class="td_left"><label for="password">密码</label></td>
+          <td class="td_right">
+            <input type="password" name="password" id="password" placeholder="请输入密码">
+            <span id="s_password" class="error"></span>
+          </td>
+          </tr>
+          <tr>
+               <td colspan="2" id="td_sub"><input type="submit" id="btn_sub" value="登录"></td>
+        </tr>
+        <div class="rg_right">
+         <p>忘记密码？<a href="#">找回密码</a></p>
+        </div>
+     </table>
+    </form>
+  </div>
+  </section>
+</body>
+</html>
+

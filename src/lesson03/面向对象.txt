@@ -1,0 +1,19 @@
+var Student = {
+    name:"cuihaoran",
+    age:3,
+    run:function(){
+        console.log(this.name+"run.....");
+    };
+    var xiaoming = {
+        name:"xiaoming"
+    };
+
+    xiaoming.__proto__ = Student;
+
+    var Bird = {
+            fly:function(){
+                console.log(this.name + "fly.....");
+            }
+        };
+    xioaming.__proto__=Bird;
+}

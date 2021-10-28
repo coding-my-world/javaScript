@@ -1,0 +1,118 @@
+body {
+    background: url(../images/bg1.png)
+}
+
+/*导航条*/
+.zqh_nav_top {
+    height: 50px !important;
+}
+
+.zqh_text_font {
+    font-size: 40px;
+}
+
+
+.zqh_nav_padded {
+    padding-top: 1.2em !important;
+    padding-bottom: 1.2em !important;
+}
+
+.zqh_nav_margin {
+    margin-top: 0.1em !important;
+}
+
+
+/*轮播图*/
+
+/* 设置图片透明 */
+.zqh_img_car {
+    width: 1000px;
+    height: 550px;
+    opacity: 0.3;
+    filter: alpha(opacity=30);
+    -moz-opacity:0.3;
+    z-index: 3;
+}
+
+.zqh_p_car {
+    font-size: 20px;
+}
+
+
+/*布局*/
+
+.zqh_fixed {
+    position: fixed !important;
+}
+
+.zqh_left_top_btn {
+    left: 25px !important;
+    top: 400px !important;
+}
+
+
+/*按钮*/
+
+.zqh_btn_padded {
+    padding-left: 0.2em !important;
+    padding-right: 0.2em !important;
+}
+
+
+
+/*footer*/
+
+.zqh_footer {
+    padding-top: 5.5em !important;
+    padding-bottom: 5.5em !important;
+    background-color: black !important;
+}
+
+.zqh_footer_line {
+    width: 0.1px;
+    height: 30px;
+    background-color: #ffffff;
+}
+
+.zqh_text_color {
+    color: #c7c6c6 !important;
+}
+
+.zqh_footer_school {
+    font-family: '华文行楷' !important;
+    color: #c7c6c6 !important;
+    font-size: 20px !important;
+}
+
+/* 送餐员 */
+
+/* 中间内容 */
+.zqh_img_food {
+    width: 200px;
+    height: 200px;
+}
+
+/* 食堂展示照片 */
+.zqh_img_dining {
+    width: 300px;
+    height: 200px;
+}
+
+.zqh_img_dining_1 {
+    width: 100px;
+    height: 100px;
+}
+
+.zqh_text_food_margin {
+    margin-top: 8em !important;
+}
+
+
+
+/* 评价管理 */
+
+.zqh_img_eva {
+    width: 200px;
+    height: 110px;
+}
+

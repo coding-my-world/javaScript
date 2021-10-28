@@ -1,0 +1,158 @@
+html{
+    font-size: 100px;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.t_container{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+.t_h_bg{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background-size: 100% 100%;
+    text-align: center;
+}
+.t_h_bg span{
+    font-size: 32px;
+    color: #fff;
+    display: inherit;
+}
+.t_main{
+    text-align: center;
+}
+.t_box{
+    width: 8.7rem;
+    height: 5rem;
+    /* border: solid 1px #fff; */
+    background-size: 100% 100%;
+    display: inline-block;
+    float: left;
+    position: relative;
+    margin-left: 0.56rem;
+    margin-top: 0.31rem;
+}
+.t_title{
+    text-align: center;
+    font-size: 0.26rem;
+    color: #fff;
+    font-weight: bold;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    width: 100%;
+    margin-top: 0.14rem;
+    margin-bottom: 0.14rem;
+    /* border: solid 1px rgb(230, 68, 68); */
+}
+.t_list{
+    width: 100%;
+    text-align: center;
+    line-height: 0rem;
+    height: 0.6rem;
+    /* border: solid 1px rgb(230, 68, 68); */
+}
+.t_min{
+    display: inline-block;
+    width: 1.4rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    background-size: 100% 100%;
+    font-size: 0.16rem;
+    color: #fff;
+    position: relative;
+    /* border: solid 1px rgb(230, 68, 68); */
+}
+.t_min i{
+    position: absolute;
+    display: inline-block;
+    width: 0.20rem;
+    height: 0.28rem;
+    background: url('../../images/image_M/top.png') no-repeat;
+    background-size: 100% 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    right: 0.05rem;
+}
+.t_min i.down{
+    background: url('../../images/image_M/down.png') no-repeat;
+    background-size: 100% 100%;
+}
+.t_number{
+    font-size: 0.34rem;
+}
+.main_table{
+    font-size: 16px;
+    /* border: solid 1px rgb(230, 68, 68); */
+}
+.main_table tr{
+    height: 42px;
+}
+.main_table{
+    width: 88%;
+    margin-top: 25px;
+    margin: 0 auto;
+}
+.main_table table{
+    width: 100%;
+}
+.main_table thead tr{
+    height: 42px;
+}
+.main_table th{
+    font-size: 14px;
+    font-weight: 600;
+    color:#61d2f7;
+    text-align: center;
+}
+
+.main_table td{
+    color:#fff;
+    font-size: 14px;
+    text-align: center;
+}
+.main_table tbody tr:nth-child(1),
+.main_table tbody tr:nth-child(3),
+.main_table tbody tr:nth-child(5){
+    width: 98%;
+    background-color: #2B3AA8;
+    box-shadow:-10px 0px 15px #2C58A6 inset,   
+    10px 0px 15px #2C58A6 inset;  
+}
+/* 三个图的控制 */
+.echart{
+    width: 470px;
+    height: 190px;
+    margin-left: 5px;
+    margin-top: 10px;
+    /* border: solid 1px chocolate; */
+}
+.echart2{
+    width: 499px;
+    height: 230px;
+    margin-left: 5px;
+    margin-top: 10px;
+    /* border: solid 1px chocolate; */
+}
+.echart3{
+    width: 470px;
+    height: 190px;
+    margin-left: 5px;
+    margin-top: 10px;
+    /* border: solid 1px chocolate; */
+}
